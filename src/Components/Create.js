@@ -3,6 +3,7 @@ import React,{useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom'
+import styles from './Create.module.css'
 
 const Create = () => {
     const [name, setName] = useState('');
@@ -30,7 +31,7 @@ const Create = () => {
     return (
         <div className='container'>
           <div className='row mt-5'>
-            <div className='col-md-4 '>
+            <div className={`col-md-4 ${styles.space} `}style={{margin:'auto'}}>
                 <form action="" onSubmit={handelsubmit}>
                 <div className='form-group mb-3'>
                     <label htmlFor="">Name</label>
